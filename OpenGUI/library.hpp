@@ -10,13 +10,18 @@ private:
     const char *name;
     int width, height;
 public:
-
+    
     void setWindowSize(int width, int height)
     {
         this->width = width;
         this->height = height;
     }
-
+    
+    void display()
+    {
+        
+    }
+    
     void init(int argc, char **argv)
     {
         glutInit(&argc, argv);
