@@ -8,14 +8,21 @@ class library
 {
 private:
     const char *name;
+    int width, height;
 public:
+
+    void setWindowSize(int width, int height)
+    {
+        this->width = width;
+        this->height = height;
+    }
 
     void init(int argc, char **argv)
     {
         glutInit(&argc, argv);
         glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
         glutInitWindowPosition(100,100);
-        glutInitWindowSize(400,400);
+        glutInitWindowSize(width, height);
         glutCreateWindow(name);
 
         glutMainLoop();
