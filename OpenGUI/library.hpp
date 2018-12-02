@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <GL/glut.h>
+#include <GUI_ellements/button.hpp">
 
 void reshape(int width, int height)
 {
@@ -11,16 +12,12 @@ void reshape(int width, int height)
 
 void display(void)
 {
-    //I'll leave the triangle here for a while.
+    //I'll leave the button(rectangle) here for a while.
     //I'll redo it later.
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    glBegin(GL_TRIANGLES);
-        glVertex3f(-0.5,-0.5,0.0);
-        glVertex3f(0.0,0.5,0.0);
-        glVertex3f(0.5,-0.5,0.0);
-    glEnd();
+    button(-0.5, -0.5, 0.5, 0.5);
 
     glutSwapBuffers();
 }
