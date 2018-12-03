@@ -4,7 +4,6 @@
 #include <GL/glut.h>
 #include <vector>
 #include "GUI_ellements/button.hpp"
-#include "GUI_ellements/ellements.h"
 
 void display(void);
 
